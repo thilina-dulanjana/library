@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <listener>
+        <listener-class>edu.ijse.absd.viva.listner.RequestListner</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>GetAuthor</servlet-name>
+        <servlet-class>edu.ijse.absd.viva.controller.GetAuthor</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SaveBook</servlet-name>
+        <servlet-class>edu.ijse.absd.viva.controller.SaveBook</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SaveMember</servlet-name>
+        <servlet-class>edu.ijse.absd.viva.controller.SaveMember</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetAuthor</servlet-name>
+        <url-pattern>/GetAuthor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SaveBook</servlet-name>
+        <url-pattern>/SaveBook</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SaveMember</servlet-name>
+        <url-pattern>/SaveMember</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
