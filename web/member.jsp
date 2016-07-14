@@ -20,11 +20,11 @@
             Father's Name<br>
             <input type="text" name="father"><br>
             Father's contact<br>
-            <input type="text" name="fContact"><br>
+            <input type="text" name="fContact" maxlength="10"><br>
             Mother's Name<br>
             <input type="text" name="mother"><br>
             Mother's contact<br>
-            <input type="text" name="mContact"><br>
+            <input type="text" name="mContact" maxlength="10"><br>
             <input type="Submit" value="Add Member" />
         </form>
     </body>
